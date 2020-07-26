@@ -48,12 +48,13 @@ const App = () => {
     try {
       let res;
       setAppState({ ...appState, loading: true });
+      const { username, password } = formState;
       switch (e.target.name) {
         case "Login":
-          res = await api.login(formState);
+          res = await api.login({ username, password });
           break;
         case "Signup":
-          res = await api.signup(formState);
+          res = await api.signup({ username, password });
           break;
       }
       let { accessToken, refreshToken } = res.data;
