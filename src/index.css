@@ -7,11 +7,17 @@ body {
   color: #fff;
 }
 
-.form-container {
+.App {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.form-container {
+  border: 1px solid aqua;
+  border-radius: 20px;
 }
 .caption {
   font-size: 1.5rem;
@@ -27,6 +33,7 @@ body {
 .form-label {
   font-size: 1.2rem;
   padding: 2px;
+  margin: 5px;
 }
 
 .form-field {
@@ -37,7 +44,25 @@ body {
 }
 
 .form-btn {
+  float: right;
   width: 100px;
   padding: 5px;
   margin: 10px;
+  border: 1px solid aqua;
+  border-radius: 10px;
+}
+.form-btn:hover {
+  cursor: pointer;
+}
+
+.user-info {
+  text-align: center;
+  font-size: 2rem;
+}
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
